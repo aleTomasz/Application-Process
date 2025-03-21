@@ -1,0 +1,4 @@
+Werkzeug
+flask
+psycopg
+psycopg-binary

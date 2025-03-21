@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Application phone number list
+{% endblock %}
+
+{% block content %}
+    {% for applicant in applicants %}
+        <div>
+            Full name: {{ applicant['full_name'] }}<br>
+            Phone number: {{ applicant['phone_number'] }}<br>
+        </div>
+    {% endfor %}
+
+    {% include 'footer.html' %}
+{% endblock %}

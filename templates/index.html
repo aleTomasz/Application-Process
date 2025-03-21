@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <nav class="menu">
+        <h3>Choose a list</h3>
+        <ul>
+            <li><a href="{{ url_for('mentors_list') }}">Mentors</a></li>
+{#            <li><a href="{{ url_for('applicants_list') }}">Applicants</a></li>#}
+        </ul>
+    </nav>
+
+    <section class="search">
+
+      <form action="{{ url_for('applicants_phone') }}">
+        <label>First Name:
+            <input name="first_name" type="text">
+            <button type="submit">Search</button>
+        </label>
+        <form>
+
+    </section>
+{% endblock %}
